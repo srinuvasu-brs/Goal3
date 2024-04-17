@@ -11,24 +11,29 @@
 */
 
 /*** 1.0 - Reset ***/
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   margin: 0;
   padding: 0;
 }
 
 body {
-  font-family: 'Conv_Roboto-Regular', Sans-Serif; /* Font family for entire body */
-  font-size: 14px; 
+  font-family: 'Conv_Roboto-Regular', Sans-Serif;
+  /* Font family for entire body */
+  font-size: 14px;
   font-weight: normal;
-  color: #202124; /* color for entire body */
+  color: #202124;
+  /* color for entire body */
   line-height: 1.5em;
-  background: #f1f3f6; 
+  background: #f1f3f6;
 }
 
 a {
   text-decoration: none;
   outline: 0;
-  color: #333; /* color for hyperlinks */
+  color: #333;
+  /* color for hyperlinks */
 }
 
 ul {
@@ -46,7 +51,8 @@ h1 {
   font-size: 26px;
 }
 
-h2, h3 {
+h2,
+h3 {
   font-weight: 500;
 }
 
@@ -113,21 +119,23 @@ ul li {
 header {
   min-height: 80px;
   margin-bottom: 30px;
-  border-bottom: 1px dashed #ddd; 
-	width: 100%;
-	float: left;
+  border-bottom: 1px dashed #ddd;
+  width: 100%;
+  float: left;
 }
 
 header h1 {
   float: left;
-  line-height: 80px; /* here line-height should be equal to height of the main class header */
+  line-height: 80px;
+  /* here line-height should be equal to height of the main class header */
 }
 
 header ul li {
   background: none;
   float: right;
   margin-right: 15px;
-  line-height: 80px; /* here line-height should be equal to height of the main class header */
+  line-height: 80px;
+  /* here line-height should be equal to height of the main class header */
 }
 
 header ul li i {
@@ -137,7 +145,7 @@ header ul li i {
 
 .main-content {
   border-bottom: 1px dashed #ddd;
-  
+
 }
 
 aside {
@@ -152,63 +160,77 @@ aside {
 
 /*** 5.0 - Mediaqueries ***/
 @media (min-width:320px) and (max-width: 991px) {
-	
+
   h1 {
     color: #fff;
     margin-bottom: 20px;
   }
-	
+
   h2 {
     background: #f0f0f0;
     padding: 10px;
     border-radius: 5px;
   }
-	
+
+  /* h2 {
+    float: right;
+    vertical-align: bottom;
+  } */
+
   h2 i {
-	  float: right;
-	  vertical-align: bottom;
-	}
-	
+    float: right;
+    vertical-align: bottom;
+  }
+
   aside {
     width: 100%;
   }
-	
+
   .body-content {
     width: 100%;
   }
-	
+
   header {
-  
+
     border-radius: 5px;
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#49c0f0+0,2d5ae2+100 */
-    background: #49c0f0; /* Old browsers */
-    background: -moz-linear-gradient(45deg, #49c0f0 0%, #2d5ae2 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(45deg, #49c0f0 0%, #2d5ae2 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(45deg, #49c0f0 0%, #2d5ae2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#49c0f0', endColorstr='#2d5ae2', GradientType=1); /* IE6-9 fallback on horizontal gradient */
+    background: #49c0f0;
+    /* Old browsers */
+    background: -moz-linear-gradient(45deg, #49c0f0 0%, #2d5ae2 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, #49c0f0 0%, #2d5ae2 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, #49c0f0 0%, #2d5ae2 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#49c0f0', endColorstr='#2d5ae2', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
     border-bottom: 0;
     padding: 20px 5%;
-margin-top: 0;
-width: 90%;
+    margin-top: 0;
+    width: 90%;
   }
-header h1 {
-	float: none;
-	line-height: 20px;
-}	
-header ul li {
-	background: none;
-	float: none;
-	margin-right: 0;
-	line-height: 36px;
-	padding-left: 0;
-}
-	header ul li a {
-		color: #fff;
-	}
+
+  header h1 {
+    float: none;
+    line-height: 20px;
+  }
+
+  header ul li {
+    background: none;
+    float: none;
+    margin-right: 0;
+    line-height: 36px;
+    padding-left: 0;
+  }
+
+  header ul li a {
+    color: #fff;
+  }
+
   #wrapper {
     max-width: 84%;
     padding: 20px 5%;
     margin: 15px 3%;
   }
-	
+
 }
